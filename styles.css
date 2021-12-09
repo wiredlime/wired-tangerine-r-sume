@@ -1,0 +1,170 @@
+:root {
+  box-sizing: border-box;
+}
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Work Sans", sans-serif;
+}
+
+/* HEADER STARTS HERE */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 1000;
+  width: 50px;
+  border-right: 1.5px dashed rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.5);
+  font-family: "Work Sans", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.0875rem;
+  font-size: 10px;
+  background-color: #efefef;
+  /* transition: all 0.3s cubic-bezier(0.05, 0.69, 0.14, 1); */
+}
+.head-bar {
+  /* position: absolute; */
+  left: 0;
+  top: 20px;
+  bottom: auto;
+  transform: rotate(-90deg) perspective(1px);
+  transform-origin: 50px 50px;
+  height: 50px;
+  line-height: 50px;
+  white-space: nowrap;
+  word-spacing: 0.5rem;
+}
+.tail-bar {
+  position: absolute;
+  left: 0;
+  transform: rotate(-90deg) perspective(1px);
+  transform-origin: 50px 50px;
+  height: 50px;
+  line-height: 50px;
+  white-space: nowrap;
+  word-spacing: 0.5rem;
+  top: auto;
+  bottom: 75px;
+  text-decoration: none;
+}
+.tail-bar .tail-bar-text {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.3);
+}
+.keyvisual-01 {
+  position: absolute;
+  height: 5vw;
+  right: 8vw;
+  top: 4vw;
+}
+.keyvisual-03 {
+  position: fixed;
+  height: 50vw;
+  right: -10vw;
+  bottom: -20vw;
+  z-index: 0;
+  opacity: 0.5;
+}
+/* SECTION #0 STARTS HERE */
+
+section {
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: stretch;
+  min-height: 60vh;
+  width: 100%;
+  align-content: center;
+  padding: 20vh 50px 20vh 75px;
+}
+/* TITLE */
+.home-title {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.heading {
+  color: rgba(0, 0, 0, 0.3);
+  font-size: 2vw;
+  font-weight: 200;
+  margin: 0;
+}
+.sub-heading {
+  font-size: 5vw;
+  margin: 0;
+  font-weight: 700;
+}
+.separate-line {
+  width: 3vw;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: left;
+  margin-left: 0;
+}
+
+.home-content {
+  color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 5vw;
+  font-size: 1vw;
+  font-weight: 200;
+}
+.home-content h1 {
+  font-size: 1vw;
+  font-weight: 300;
+}
+
+/* SECTION #1 STARTS HERE */
+.keyvisual-02 {
+  height: 12vw;
+}
+.about-me {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.right-side {
+  width: 50%;
+}
+.p-01 {
+  font-size: 3vw;
+  font-weight: 700;
+}
+.p-02 {
+  font-size: 1.5vw;
+  font-weight: 300;
+}
+
+.element {
+  height: 3vw;
+}
+.skills-heading {
+  font-size: 2vw;
+  font-weight: 400;
+}
+.skills-title {
+  font-size: 1.5vw;
+  font-weight: 300;
+}
+
+/* SECTION #2 STARTS HERE */
+.element-03 {
+  height: 45vw;
+}
+.portfolio {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* justify-content: space-between; */
+}
+.contact-box {
+  font-size: 1.5vw;
+  font-weight: 300;
+}
